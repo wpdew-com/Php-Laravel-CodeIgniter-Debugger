@@ -1,0 +1,118 @@
+{
+  "extName": {
+    "message": "Php Laravel & CodeIgniter Debugger",
+    "description": "Название расширения"
+  },
+  "extDescription": {
+    "message": "Мониторинг Laravel, CodeIgniter и PHP приложений в боковой панели Chrome. Просмотр SQL запросов, времени выполнения, использования памяти.",
+    "description": "Описание расширения"
+  },
+  "headerTitle": {
+    "message": "PHP Framework Monitor",
+    "description": "Заголовок панели"
+  },
+  "btnClear": {
+    "message": "Очистить все данные",
+    "description": "Подсказка кнопки очистки"
+  },
+  "cardRequests": {
+    "message": "Запросов",
+    "description": "Название карточки запросов"
+  },
+  "cardQueries": {
+    "message": "SQL запросов",
+    "description": "Название карточки SQL запросов"
+  },
+  "cardAvgTime": {
+    "message": "Среднее время",
+    "description": "Название карточки среднего времени"
+  },
+  "currentPageTitle": {
+    "message": "Текущая страница",
+    "description": "Заголовок секции текущей страницы"
+  },
+  "currentPageEmpty": {
+    "message": "Нет данных о текущей странице",
+    "description": "Сообщение об отсутствии данных"
+  },
+  "labelFramework": {
+    "message": "Фреймворк",
+    "description": "Метка фреймворка"
+  },
+  "labelDatabase": {
+    "message": "База данных",
+    "description": "Метка базы данных"
+  },
+  "labelRoute": {
+    "message": "Маршрут",
+    "description": "Метка маршрута"
+  },
+  "labelQueries": {
+    "message": "SQL Запросов",
+    "description": "Метка SQL запросов"
+  },
+  "labelExecutionTime": {
+    "message": "Время выполнения",
+    "description": "Метка времени выполнения"
+  },
+  "labelMemory": {
+    "message": "Память",
+    "description": "Метка памяти"
+  },
+  "labelMethod": {
+    "message": "Метод",
+    "description": "Метка HTTP метода"
+  },
+  "requestsHistoryTitle": {
+    "message": "История запросов",
+    "description": "Заголовок истории запросов"
+  },
+  "requestsEmpty": {
+    "message": "Пока нет перехваченных запросов",
+    "description": "Сообщение об отсутствии запросов"
+  },
+  "requestsEmptyHint": {
+    "message": "Откройте Laravel или CodeIgniter сайт",
+    "description": "Подсказка при отсутствии запросов"
+  },
+  "setupTitle": {
+    "message": "Настройка сервера",
+    "description": "Заголовок секции настройки"
+  },
+  "setupDescription": {
+    "message": "Чтобы расширение работало, добавьте в ваш Laravel/CodeIgniter middleware следующие заголовки:",
+    "description": "Описание настройки"
+  },
+  "setupLaravelTitle": {
+    "message": "Laravel Middleware",
+    "description": "Заголовок Laravel секции"
+  },
+  "setupCodeIgniterTitle": {
+    "message": "CodeIgniter Hook",
+    "description": "Заголовок CodeIgniter секции"
+  },
+  "setupPhpTitle": {
+    "message": "Чистый PHP",
+    "description": "Заголовок Vanilla PHP секции"
+  },
+  "btnToggleSetup": {
+    "message": "Переключить инструкции",
+    "description": "Кнопка переключения инструкций"
+  },
+  "btnHideSetup": {
+    "message": "Скрыть инструкции",
+    "description": "Кнопка скрытия"
+  },
+  "btnShowSetup": {
+    "message": "Показать инструкции",
+    "description": "Кнопка показа"
+  },
+  "statSql": {
+    "message": "SQL",
+    "description": "Метка SQL статистики"
+  },
+  "confirmClear": {
+    "message": "Очистить все данные для этой вкладки?",
+    "description": "Подтверждение очистки"
+  }
+}

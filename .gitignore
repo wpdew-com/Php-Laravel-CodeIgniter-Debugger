@@ -1,0 +1,10 @@
+.idea
+.vscode
+.node_modules
+.env",
+.DS_Store
+fiveserver.config.js
+CHROME_WEB_STORE.md
+PUBLISH_GUIDE.md
+WEBSTORE_TEXTS.md
+create-package.sh

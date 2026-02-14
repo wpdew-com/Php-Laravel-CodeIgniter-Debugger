@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Laravel & CodeIgniter Debugger</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #FF2D20;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        
+        .last-updated {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 24px;
+            border-bottom: 2px solid #FF2D20;
+            padding-bottom: 5px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #FF2D20;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .checkmark {
+            color: #10B981;
+            margin-right: 5px;
+        }
+        
+        .crossmark {
+            color: #EF4444;
+            margin-right: 5px;
+        }
+        
+        .contact {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 30px;
+        }
+        
+        a {
+            color: #FF2D20;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> February 11, 2026</p>
+        
+        <div class="highlight">
+            <strong>TL;DR:</strong> This extension does NOT collect, store, or transmit any personal data. Everything happens locally in your browser. No tracking. No analytics. No external servers.
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>
+            Laravel & CodeIgniter Debugger ("the Extension") is a developer tool designed for local web development. 
+            We are committed to protecting your privacy and being transparent about our practices.
+        </p>
+
+        <h2>2. Data Collection</h2>
+        <p>
+            <strong>The Extension does NOT collect, store, or transmit any personal data.</strong>
+        </p>
+        <p>
+            We do not have any servers, databases, or analytics systems. There is no tracking code in the extension.
+        </p>
+
+        <h2>3. What Data is Processed Locally</h2>
+        <p>
+            The Extension processes the following technical debugging data <strong>LOCALLY</strong> in your browser:
+        </p>
+        <ul>
+            <li>HTTP response headers from your local development server</li>
+            <li>URL of requests (localhost, 127.0.0.1, *.test, *.local domains only)</li>
+            <li>Number of SQL queries executed</li>
+            <li>Page execution time (in milliseconds)</li>
+            <li>Memory usage statistics (in megabytes)</li>
+            <li>Framework version information (Laravel/CodeIgniter version)</li>
+            <li>Route names and controller information</li>
+            <li>HTTP request methods (GET, POST, etc.)</li>
+        </ul>
+        
+        <p><strong>This data:</strong></p>
+        <ul>
+            <li><span class="checkmark">✓</span> Stays on your device</li>
+            <li><span class="checkmark">✓</span> Is never sent to external servers</li>
+            <li><span class="checkmark">✓</span> Is automatically deleted when you close browser tabs</li>
+            <li><span class="checkmark">✓</span> Is only visible to you</li>
+            <li><span class="checkmark">✓</span> Can be cleared manually using the "Clear" button</li>
+        </ul>
+
+        <h2>4. Chrome Permissions and Their Usage</h2>
+        
+        <h3>4.1. Storage Permission</h3>
+        <p>
+            Used to temporarily cache debugging information for active browser tabs in <code>chrome.storage.local</code>. 
+            This allows you to maintain request history (last 100 requests) when reopening the Side Panel.
+        </p>
+        <p>
+            <span class="crossmark">✗</span> No personal data is stored<br>
+            <span class="crossmark">✗</span> No browsing history is saved<br>
+            <span class="checkmark">✓</span> Only technical debugging metrics<br>
+            <span class="checkmark">✓</span> Cleared automatically when tabs close
+        </p>
+
+        <h3>4.2. WebRequest Permission</h3>
+        <p>
+            Used to intercept and read HTTP response headers from web requests using <code>chrome.webRequest.onCompleted</code>.
+        </p>
+        <p>
+            The extension <strong>ONLY reads</strong> response headers. It does not:
+        </p>
+        <ul>
+            <li><span class="crossmark">✗</span> Modify requests</li>
+            <li><span class="crossmark">✗</span> Modify responses</li>
+            <li><span class="crossmark">✗</span> Block requests</li>
+            <li><span class="crossmark">✗</span> Intercept request bodies</li>
+            <li><span class="crossmark">✗</span> Access cookies or authentication tokens</li>
+        </ul>
+
+        <h3>4.3. SidePanel Permission</h3>
+        <p>
+            Used to display debugging information in Chrome's Side Panel interface. This provides a clean, 
+            non-intrusive debugging experience without covering website content.
+        </p>
+
+        <h3>4.4. Host Permissions</h3>
+        <p>
+            The extension requires access to local development domains only:
+        </p>
+        <ul>
+            <li><code>http://localhost/*</code> - Local development server</li>
+            <li><code>http://127.0.0.1/*</code> - Local development server (IP address)</li>
+            <li><code>http://*.test/*</code> - Laravel Valet/Homestead domains</li>
+            <li><code>http://*.local/*</code> - Common local development domains</li>
+            <li><code>https://*/*</code> - Local HTTPS development environments</li>
+        </ul>
+        <p>
+            These permissions are <strong>ONLY</strong> used to read response headers for debugging purposes. 
+            The extension is designed for local development and should not be used on production websites.
+        </p>
+
+        <h2>5. No Third-Party Access</h2>
+        <p>
+            No data is shared with third parties. The extension does not use:
+        </p>
+        <ul>
+            <li><span class="crossmark">✗</span> Google Analytics or any analytics service</li>
+            <li><span class="crossmark">✗</span> Tracking pixels or beacons</li>
+            <li><span class="crossmark">✗</span> External APIs or services</li>
+            <li><span class="crossmark">✗</span> Advertisement networks</li>
+            <li><span class="crossmark">✗</span> Social media integration</li>
+        </ul>
+
+        <h2>6. No Remote Code Execution</h2>
+        <p>
+            The extension does not load or execute any remote code. All JavaScript, HTML, and CSS files are 
+            included directly in the extension package. No CDNs, no external scripts, no dynamic code loading.
+        </p>
+
+        <h2>7. Local Development Only</h2>
+        <p>
+            This extension is designed exclusively for local web development. It works with:
+        </p>
+        <ul>
+            <li>localhost development servers</li>
+            <li>Laravel Valet domains (*.test)</li>
+            <li>Local network domains (*.local)</li>
+            <li>Docker containers on localhost</li>
+        </ul>
+        <p>
+            <strong>Important:</strong> Never enable debug headers on production websites. This extension 
+            should only be used in development environments.
+        </p>
+
+        <h2>8. User Control</h2>
+        <p>You have full control over the extension:</p>
+        <ul>
+            <li><span class="checkmark">✓</span> <strong>Disable:</strong> Turn off the extension at any time in chrome://extensions/</li>
+            <li><span class="checkmark">✓</span> <strong>Clear Data:</strong> Use the "Clear" button in the Side Panel to remove stored debugging data</li>
+            <li><span class="checkmark">✓</span> <strong>Uninstall:</strong> Completely remove the extension and all its data</li>
+            <li><span class="checkmark">✓</span> <strong>Inspect Code:</strong> View the extension's source code in chrome://extensions/ (Developer mode)</li>
+        </ul>
+
+        <h2>9. Updates and Changes</h2>
+        <p>
+            We may update this Privacy Policy from time to time. Any changes will be reflected in the 
+            "Last Updated" date at the top of this page. Continued use of the extension after changes 
+            constitutes acceptance of the updated policy.
+        </p>
+
+        <h2>10. Children's Privacy</h2>
+        <p>
+            This extension is a professional developer tool and is not intended for use by children under 13. 
+            We do not knowingly collect any information from children.
+        </p>
+
+        <h2>11. Open Source</h2>
+        <p>
+            The extension's source code is available for review. You can verify that it does not collect 
+            or transmit any data by inspecting the code yourself.
+        </p>
+
+        <div class="contact">
+            <h2>12. Contact Information</h2>
+            <p>
+                If you have any questions about this Privacy Policy or the extension's practices, please contact:
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:laravel.debugger.extension@gmail.com">laravel.debugger.extension@gmail.com</a>
+            </p>
+        </div>
+
+        <h2>13. Compliance</h2>
+        <p>
+            This extension complies with:
+        </p>
+        <ul>
+            <li>Chrome Web Store Developer Program Policies</li>
+            <li>Chrome Extension Manifest V3 requirements</li>
+            <li>General Data Protection Regulation (GDPR) principles</li>
+        </ul>
+
+        <div class="footer">
+            <p>
+                <strong>Laravel & CodeIgniter Debugger</strong><br>
+                A privacy-focused developer tool for local web development
+            </p>
+            <p style="margin-top: 10px;">
+                © 2026 Laravel & CodeIgniter Debugger. All rights reserved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

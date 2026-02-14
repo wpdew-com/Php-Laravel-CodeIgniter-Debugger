@@ -1,0 +1,118 @@
+{
+  "extName": {
+    "message": "Php Laravel & CodeIgniter Debugger",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Monitor Laravel, CodeIgniter & PHP applications in Chrome Side Panel. View SQL queries, execution time, memory usage.",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "PHP Framework Monitor",
+    "description": "Main header title"
+  },
+  "btnClear": {
+    "message": "Clear all data",
+    "description": "Clear button tooltip"
+  },
+  "cardRequests": {
+    "message": "Requests",
+    "description": "Total requests card label"
+  },
+  "cardQueries": {
+    "message": "SQL Queries",
+    "description": "SQL queries card label"
+  },
+  "cardAvgTime": {
+    "message": "Avg Time",
+    "description": "Average time card label"
+  },
+  "currentPageTitle": {
+    "message": "Current Page",
+    "description": "Current page section title"
+  },
+  "currentPageEmpty": {
+    "message": "No data about current page",
+    "description": "Empty state message for current page"
+  },
+  "labelFramework": {
+    "message": "Framework",
+    "description": "Framework label"
+  },
+  "labelDatabase": {
+    "message": "Database",
+    "description": "Database label"
+  },
+  "labelRoute": {
+    "message": "Route",
+    "description": "Route label"
+  },
+  "labelQueries": {
+    "message": "SQL Queries",
+    "description": "SQL queries label"
+  },
+  "labelExecutionTime": {
+    "message": "Execution Time",
+    "description": "Execution time label"
+  },
+  "labelMemory": {
+    "message": "Memory",
+    "description": "Memory label"
+  },
+  "labelMethod": {
+    "message": "Method",
+    "description": "HTTP method label"
+  },
+  "requestsHistoryTitle": {
+    "message": "Request History",
+    "description": "Request history section title"
+  },
+  "requestsEmpty": {
+    "message": "No intercepted requests yet",
+    "description": "Empty requests list message"
+  },
+  "requestsEmptyHint": {
+    "message": "Open Laravel or CodeIgniter website",
+    "description": "Empty requests hint"
+  },
+  "setupTitle": {
+    "message": "Server Setup",
+    "description": "Setup section title"
+  },
+  "setupDescription": {
+    "message": "To make the extension work, add these headers to your Laravel/CodeIgniter middleware:",
+    "description": "Setup description"
+  },
+  "setupLaravelTitle": {
+    "message": "Laravel Middleware",
+    "description": "Laravel setup section title"
+  },
+  "setupCodeIgniterTitle": {
+    "message": "CodeIgniter Hook",
+    "description": "CodeIgniter setup section title"
+  },
+  "setupPhpTitle": {
+    "message": "Vanilla PHP",
+    "description": "Vanilla PHP setup section title"
+  },
+  "btnToggleSetup": {
+    "message": "Toggle instructions",
+    "description": "Toggle setup button"
+  },
+  "btnHideSetup": {
+    "message": "Hide instructions",
+    "description": "Hide setup button"
+  },
+  "btnShowSetup": {
+    "message": "Show instructions",
+    "description": "Show setup button"
+  },
+  "statSql": {
+    "message": "SQL",
+    "description": "SQL stat badge"
+  },
+  "confirmClear": {
+    "message": "Clear all data for this tab?",
+    "description": "Clear confirmation message"
+  }
+}

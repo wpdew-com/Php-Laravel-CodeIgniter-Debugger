@@ -1,0 +1,118 @@
+{
+  "extName": {
+    "message": "Php Laravel & CodeIgniter Debugger",
+    "description": "Назва розширення"
+  },
+  "extDescription": {
+    "message": "Моніторинг Laravel, CodeIgniter і PHP додатків у бічній панелі Chrome. Перегляд SQL запитів, часу виконання, використання пам'яті.",
+    "description": "Опис розширення"
+  },
+  "headerTitle": {
+    "message": "PHP Framework Monitor",
+    "description": "Заголовок панелі"
+  },
+  "btnClear": {
+    "message": "Очистити всі дані",
+    "description": "Підказка кнопки очищення"
+  },
+  "cardRequests": {
+    "message": "Запитів",
+    "description": "Назва картки запитів"
+  },
+  "cardQueries": {
+    "message": "SQL запитів",
+    "description": "Назва картки SQL запитів"
+  },
+  "cardAvgTime": {
+    "message": "Середній час",
+    "description": "Назва картки середнього часу"
+  },
+  "currentPageTitle": {
+    "message": "Поточна сторінка",
+    "description": "Заголовок секції поточної сторінки"
+  },
+  "currentPageEmpty": {
+    "message": "Немає даних про поточну сторінку",
+    "description": "Повідомлення про відсутність даних"
+  },
+  "labelFramework": {
+    "message": "Фреймворк",
+    "description": "Мітка фреймворку"
+  },
+  "labelDatabase": {
+    "message": "База даних",
+    "description": "Мітка бази даних"
+  },
+  "labelRoute": {
+    "message": "Роут",
+    "description": "Мітка роуту"
+  },
+  "labelQueries": {
+    "message": "SQL Запитів",
+    "description": "Мітка SQL запитів"
+  },
+  "labelExecutionTime": {
+    "message": "Час виконання",
+    "description": "Мітка часу виконання"
+  },
+  "labelMemory": {
+    "message": "Пам'ять",
+    "description": "Мітка пам'яті"
+  },
+  "labelMethod": {
+    "message": "Метод",
+    "description": "Мітка HTTP методу"
+  },
+  "requestsHistoryTitle": {
+    "message": "Історія запитів",
+    "description": "Заголовок історії запитів"
+  },
+  "requestsEmpty": {
+    "message": "Поки що немає перехоплених запитів",
+    "description": "Повідомлення про відсутність запитів"
+  },
+  "requestsEmptyHint": {
+    "message": "Відкрийте Laravel або CodeIgniter сайт",
+    "description": "Підказка при відсутності запитів"
+  },
+  "setupTitle": {
+    "message": "Налаштування сервера",
+    "description": "Заголовок секції налаштування"
+  },
+  "setupDescription": {
+    "message": "Щоб розширення працювало, додайте в ваш Laravel/CodeIgniter middleware такі заголовки:",
+    "description": "Опис налаштування"
+  },
+  "setupLaravelTitle": {
+    "message": "Laravel Middleware",
+    "description": "Заголовок Laravel секції"
+  },
+  "setupCodeIgniterTitle": {
+    "message": "CodeIgniter Hook",
+    "description": "Заголовок CodeIgniter секції"
+  },
+  "setupPhpTitle": {
+    "message": "Чистий PHP",
+    "description": "Заголовок Vanilla PHP секції"
+  },
+  "btnToggleSetup": {
+    "message": "Перемкнути інструкції",
+    "description": "Кнопка перемикання інструкцій"
+  },
+  "btnHideSetup": {
+    "message": "Приховати інструкції",
+    "description": "Кнопка приховування"
+  },
+  "btnShowSetup": {
+    "message": "Показати інструкції",
+    "description": "Кнопка показу"
+  },
+  "statSql": {
+    "message": "SQL",
+    "description": "Мітка SQL статистики"
+  },
+  "confirmClear": {
+    "message": "Очистити всі дані для цієї вкладки?",
+    "description": "Підтвердження очищення"
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="extName">Laravel & CodeIgniter Debugger</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1 data-i18n="headerTitle">PHP Framework Monitor</h1>
+      <button id="clearBtn" class="btn-clear" data-i18n-title="btnClear">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+          <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+        </svg>
+      </button>
+    </header>
+
+    <!-- Summary Cards -->
+    <div class="summary" id="summary">
+      <div class="summary-card">
+        <div class="card-content">
+          <div class="card-value" id="totalRequests">0</div>
+          <div class="card-label" data-i18n="cardRequests">Requests</div>
+        </div>
+      </div>
+      
+      <div class="summary-card">
+        <div class="card-content">
+          <div class="card-value" id="totalQueries">0</div>
+          <div class="card-label" data-i18n="cardQueries">SQL Queries</div>
+        </div>
+      </div>
+      
+      <div class="summary-card">
+        <div class="card-content">
+          <div class="card-value" id="avgTime">0ms</div>
+          <div class="card-label" data-i18n="cardAvgTime">Avg Time</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Current Page Info -->
+    <div class="current-info" id="currentInfo">
+      <div class="info-section">
+        <h3 data-i18n="currentPageTitle">Current Page</h3>
+        <div class="info-empty" data-i18n="currentPageEmpty">No data about current page</div>
+      </div>
+    </div>
+
+    <!-- Requests List -->
+    <div class="requests-section">
+      <h3 data-i18n="requestsHistoryTitle">Request History</h3>
+      <div id="requestsList" class="requests-list">
+        <div class="empty-state">
+          <div class="empty-icon">🔍</div>
+          <p data-i18n="requestsEmpty">No intercepted requests yet</p>
+          <small data-i18n="requestsEmptyHint">Open Laravel or CodeIgniter website</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Setup Instructions -->
+    <div class="setup-section" id="setupSection">
+      <h3 data-i18n="setupTitle">Server Setup</h3>
+      <p data-i18n="setupDescription">To make the extension work, add these headers to your Laravel/CodeIgniter middleware:</p>
+      
+      <div class="code-block">
+        <div class="code-header" data-i18n="setupLaravelTitle">Laravel Middleware</div>
+        <pre><code>// app/Http/Middleware/DebugHeaders.php
+return $response-&gt;withHeaders([
+    'X-Laravel-Version' =&gt; app()-&gt;version(),
+    'X-Laravel-Route' =&gt; request()-&gt;route()-&gt;getName(),
+    'X-Debug-Queries' =&gt; DB::getQueryLog()-&gt;count(),
+    'X-Debug-Time' =&gt; round((microtime(true) - LARAVEL_START) * 1000, 2),
+    'X-Debug-Memory' =&gt; round(memory_get_usage() / 1024 / 1024, 2),
+]);</code></pre>
+      </div>
+      
+      <div class="code-block">
+        <div class="code-header" data-i18n="setupCodeIgniterTitle">CodeIgniter Hook</div>
+        <pre><code>// application/hooks/DebugHeaders.php
+header('X-CodeIgniter-Version: ' . CI_VERSION);
+header('X-Debug-Queries: ' . $this-&gt;db-&gt;query_count);
+header('X-Debug-Time: ' . $this-&gt;benchmark-&gt;elapsed_time());
+header('X-Debug-Memory: ' . round(memory_get_usage()/1024/1024, 2));</code></pre>
+      </div>
+      
+      <div class="code-block">
+        <div class="code-header" data-i18n="setupPhpTitle">Vanilla PHP</div>
+        <pre><code>// index.php (початок файлу)
+require_once 'PhpDebugHeaders.php';
+$debug = PhpDebugHeaders::init();
+
+// Ваш код...
+$result = $debug-&gt;pdoQuery($pdo, "SELECT * FROM users");
+// Headers додаються автоматично!</code></pre>
+      </div>
+      
+      <button id="toggleSetup" class="btn-toggle" data-i18n="btnHideSetup">Hide instructions</button>
+    </div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
